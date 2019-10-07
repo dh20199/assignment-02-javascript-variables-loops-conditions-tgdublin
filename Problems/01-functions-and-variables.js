@@ -85,7 +85,8 @@ function returnArray (first, second, third) {
  * @param {} thisArray of minimum length 3
  * @returns {string} a sentence  composed from the first 3 elements of the array
  */
-function splitArray (thisArray) {return thisarray[0] + ' ' + thisarray[1] + ' was a ' + thisarray[2] + '.';
+function splitArray (thisArray) {
+  return thisArray[0] + ' ' + thisArray[1] + ' was a ' + thisArray[2] + '.';
   // remember you can access individual elements of an array with
   // array[0]
   // array[1]
@@ -103,7 +104,7 @@ function splitArray (thisArray) {return thisarray[0] + ' ' + thisarray[1] + ' wa
  * @returns {number} the difference of the two parameters
  */
 function subtract(number1, number2) {
-  return number1 - number2;
+  return (number1 - number2);
   // subtract number2 from number1, and return the result.
 }
 
@@ -112,7 +113,15 @@ function subtract(number1, number2) {
 // sure that both parameters are numbers. If so, return the result. If not, return the string
 // "I can only subtract numbers."
 
-function carefulSubtract (first, second) {
+function carefulSubtract (first, second) {;
+  if(!(isNaN(first)) && !(isNaN(second))) {; 
+    return (first - second)
+
+  }
+  else{
+    return 'I can only subtract numbers.'
+  }
+}
   // test to be sure that both first and second are numbers.
   // if so, return the result. Otherwise, return the string
   // "I can only subtract numbers."

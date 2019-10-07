@@ -115,10 +115,9 @@ function subtract(number1, number2) {
 
 function carefulSubtract (first, second) {;
   if(!(isNaN(first)) && !(isNaN(second))) {; 
-    return (first - second)
-
+    return subtract(first, second)
   }
-  else{
+  else {
     return 'I can only subtract numbers.'
   }
 }

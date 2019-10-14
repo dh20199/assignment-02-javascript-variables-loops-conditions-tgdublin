@@ -159,7 +159,7 @@ function stringIterator (aString, aNumber) {
 function prettyIterator (aString, aNumber) {
   var loop = ''
   for (var i = 0; i < aNumber; i++) {
-    loop = loop + aString + '(' + i + ')\n';
+    loop = loop + aString + '(' + i.toString() + ')\n';
   }
   return loop;
   // be sure to check your results on this one; it has a trick. maybe 2. 
@@ -207,7 +207,7 @@ function prettyIterator (aString, aNumber) {
 function computeReign (pm) {
   var length = pm.toparty - pm.from;
   var lengthstr = length.toString();
-  pm.fullname + '\'s reign was ' + lengthstr + 'years long.'
+  return pm.fullname + '\'s reign was ' + lengthstr + 'years long.'
   // declare a variable, setting it equal to the
   // length of reign. Now declare another variable,
   // and construct the desired sentence using the appropriate
@@ -271,9 +271,10 @@ function sentences(list) {
   var reignlist = '';
   var reignlength = 0;
   for (var i = 0; i < listitems; i++) {
-    reignlength = (list[i].to - list[i].from).toString;
+    reignlength = (list[i].to - list[i].from).toString();
     reignlist = reignlist + list[i].fullName + '\'s reign was ' + reignlength + 'years long.\n';
   }
+  return reignlist;
 }
 
 // DO NOT MODIFY -- FOR AUTOMATED TESTING ONLY

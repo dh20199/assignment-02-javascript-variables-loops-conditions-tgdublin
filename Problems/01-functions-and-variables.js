@@ -104,7 +104,7 @@ function splitArray (thisArray) {
  * @returns {number} the difference of the two parameters
  */
 function subtract(number1, number2) {
-  return (number1 - number2);
+  return number1 - number2;
   // subtract number2 from number1, and return the result.
 }
 
@@ -114,18 +114,20 @@ function subtract(number1, number2) {
 // "I can only subtract numbers."
 
 function carefulSubtract (first, second) {;
-  if(!(isNaN(first)) && !(isNaN(second))) {; 
-    return subtract(first, second)
+  if ((isNaN(first)) || (isNaN(second))) 
+  { 
+    return 'I can only subtract numbers.';
   }
-  else {
-    return 'I can only subtract numbers.'
+  else 
+  {
+    return first - second;
   }
 }
   // test to be sure that both first and second are numbers.
   // if so, return the result. Otherwise, return the string
   // "I can only subtract numbers."
 
-}
+
 
 
 
@@ -141,6 +143,22 @@ function carefulSubtract (first, second) {;
  * @returns {} a meessage about unknown, or the square of unknown if it is a number
  */
 function typeTester (unknown) {
+  if (typeof unknown === 'string') 
+  {
+    return unknown + ' yay!';
+  }
+  else if (typeof unknown === 'number') 
+  {
+    return unknown * unknown;
+  }
+  else if (typeof unkown === 'null') 
+  {
+    return 'sorry, I can\'t do anything with a null value.';
+  }
+  else
+  {
+    return 'I don\'t know how to use that kind of variable';
+  }
   // use an if/else construction, a switch/case , or any other branching logic. Remember to
   // return a value. 
 }

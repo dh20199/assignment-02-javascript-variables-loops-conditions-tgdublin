@@ -206,8 +206,7 @@ function prettyIterator (aString, aNumber) {
  */
 function computeReign (pm) {
   var length = pm.toparty - pm.from;
-  var lengthstr = length.toString();
-  return pm.fullname + '\'s reign was ' + lengthstr + 'years long.'
+  return pm.fullName + '\'s reign was ' + length.toString() + ' years long.'
   // declare a variable, setting it equal to the
   // length of reign. Now declare another variable,
   // and construct the desired sentence using the appropriate
@@ -272,7 +271,7 @@ function sentences(list) {
   var reignlength = 0;
   for (var i = 0; i < listitems; i++) {
     reignlength = (list[i].to - list[i].from).toString();
-    reignlist = reignlist + list[i].fullName + '\'s reign was ' + reignlength + 'years long.\n';
+    reignlist = reignlist + list[i].fullName + '\'s reign was ' + reignlength + ' years long.\n';
   }
   return reignlist;
 }

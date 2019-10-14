@@ -159,7 +159,7 @@ function stringIterator (aString, aNumber) {
 function prettyIterator (aString, aNumber) {
   var loop = ''
   for (var i = 0; i < aNumber; i++) {
-    loop = loop + aString + '(' + i.toString() + ')\n';
+    loop = loop + aString + '(' + (i + 1).toString() + ')\n';
   }
   return loop;
   // be sure to check your results on this one; it has a trick. maybe 2. 

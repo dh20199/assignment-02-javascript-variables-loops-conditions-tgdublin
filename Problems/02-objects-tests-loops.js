@@ -266,7 +266,7 @@ function sentences(list) {
   // is to use the "for...of" loop syntax to loop through the array,
   // and the object[attribute] or object.attribute reference format to access
   // the internal components of the objects.
-  var listitems = list.length - 1;
+  var listitems = list.length;
   var reignlist = '';
   var reignlength = 0;
   for (var i = 0; i < listitems; i++) {

@@ -157,7 +157,7 @@ function typeTester (unknown) {
   }
   else
   {
-    return 'I don\'t know how to use that kind of variable';
+    return 'I don\'t know how to use that kind of variable.';
   }
 }
   // use an if/else construction, a switch/case , or any other branching logic. Remember to

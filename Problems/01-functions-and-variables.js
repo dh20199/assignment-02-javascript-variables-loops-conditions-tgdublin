@@ -151,9 +151,9 @@ function typeTester (unknown) {
   {
     return unknown * unknown;
   }
-  else if (typeof unkown === 'object') 
+  else if (typeof unkown === 'undefined') 
   {
-    return 'sorry, I can\'t do anything with a null value.';
+    return 'sorry, I can\'t do anything with a undefined value.';
   }
   else
   {

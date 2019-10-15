@@ -155,13 +155,14 @@ function typeTester (unknown) {
   {
     return 'Sorry, I can\'t do anything with an undefined value.';
   }
-  else;
+  else
   {
     return 'I don\'t know how to use that kind of variable';
   }
+}
   // use an if/else construction, a switch/case , or any other branching logic. Remember to
   // return a value. 
-}
+
 
 
 

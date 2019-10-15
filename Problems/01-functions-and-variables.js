@@ -147,11 +147,11 @@ function typeTester (unknown) {
   {
     return unknown + ' yay!';
   }
-  else if (typeof unknown === 'number') 
+  if (typeof unknown === 'number') 
   {
     return unknown * unknown;
   }
-  else if (typeof unkown === 'undefined') 
+  if (typeof unkown === 'undefined') 
   {
     return 'Sorry, I can\'t do anything with an undefined value.';
   }
